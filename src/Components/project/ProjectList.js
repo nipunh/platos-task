@@ -33,7 +33,16 @@ class ProjectList extends Component {
     //Clear pre-loaded fields of update form
     clearField = (e) =>{
         this.setState({
+            ...this.state,
             [e.target.id] : '',
+        })
+    }
+    handleClose =() =>{
+        this.setState({
+            ...this.state,
+            loading : false,
+            error : false, 
+            success : null
         })
     }
 
@@ -83,9 +92,7 @@ class ProjectList extends Component {
                                     className="close" 
                                     data-dismiss="modal" 
                                     aria-label="Close"
-                                    onClick={()=>{this.setState({
-                                        success : null
-                                    })}}
+                                    onClick={this.handleClose}
                                     >
                             <span aria-hidden="true">&times;</span>
                             </button>
@@ -126,7 +133,7 @@ class ProjectList extends Component {
                                     value = {this.state.content} 
                                     onChange = {this.handleChange}
                                     placeholder="Enter project details..."
-
+                                    required
                                 />
 
                                 <div className="input-group-append">

@@ -61,8 +61,15 @@ export default function Users({users}) {
     //Clear pre-loaded fields of update form
     const clearField = (e) =>{
         setnewUser({
+            ...newUser, 
             [e.target.id] : '',
         })
+    }
+
+    const handleClose = (e) => {
+        setError(false);
+        setLoading(false);
+        setSuccess(null)
     }
     
     return (
@@ -103,7 +110,9 @@ export default function Users({users}) {
                                     className="close" 
                                     data-dismiss="modal" 
                                     aria-label="Close"
-                                    onClick ={()=>{setSuccess(null)}}
+                                    onClick ={()=>{
+                                        handleClose()
+                                        }}
                                     >
                             <span aria-hidden="true">&times;</span>
                             </button>
