@@ -6,20 +6,19 @@ https://platso-73af9.web.app/
 ## Project Details
 ### Major 2 components
 1) [Home](https://platso-73af9.web.app/)
-  
-  - Home component consist of following functionalities
-    - Create Project
-    - Project List
-    - Edit/Update Project  
+    - Home component consist of following functionalities
+      - Create Project
+      - Project List
+      - Edit/Update Project  
 
-  - Home component is created using Redux
+    - Home component is created using Redux
 
 2) [About](https://platso-73af9.web.app/about)
-  - Abour component consist of following functionalities
-    - View Users
-    - Update/Edit Users  
+    - Abour component consist of following functionalities
+      - View Users
+      - Update/Edit Users  
 
-  - About component is created using React Hooks and Streams
+    - About component is created using React Hooks and Streams
 
 
 ## Bonus Task
