@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://platso-73af9.web.app/
 
 ## Project Details
-### Major 2 components
+### App components :
 1) [Home](https://platso-73af9.web.app/)
     - Home component consist of following functionalities
       - Create Project
